@@ -1,9 +1,9 @@
 #Critical file permission checks
-400 /etc/shadow
-600 /etc/security
-644 /etc/ssh/sshd_config
-400 /etc/gshadow 
-400 /etc/shadow
+chmod 400 /etc/shadow
+chmod 600 /etc/security
+chmod 644 /etc/ssh/sshd_config
+chmod 400 /etc/gshadow 
+chmod 400 /etc/shadow
 
 # Check SSH password expiration time
 chage --maxdays 90 root
