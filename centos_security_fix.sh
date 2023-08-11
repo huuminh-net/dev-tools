@@ -10,7 +10,3 @@ chage --maxdays 90 root
 
 # Check minimum interval between SSH password changes
 chage --mindays 7 root
-
-#
-
-sed -i 's/#ClientAliveInterval 900/ClientAliveInterval 0/' /etc/ssh/sshd_config
